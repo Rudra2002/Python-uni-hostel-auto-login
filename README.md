@@ -20,7 +20,7 @@ The following Python script automates the login process for My University's Soph
 ### For Windows:
 1. Ensure Python is installed on your system.
 2. Install Chrome or Chromium browser.
-3. Download Chrome drivers from this (link)[https://chromedriver.chromium.org/].
+3. Download Chrome drivers from this [link](https://chromedriver.chromium.org/).
 4. Install the Selenium package by running:
 ```
 pip install selenium
