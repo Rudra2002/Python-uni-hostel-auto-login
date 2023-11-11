@@ -25,6 +25,6 @@ The following Python script automates the login process for My University's Soph
 ```
 pip install selenium
 ```
-5.     Copy the program from the source folder and double-click to run.
+5. Copy the program from the source folder to where you want it and double-click to run.
 
 **Note:** Make sure to periodically check for updates and adjust your setup accordingly.
