@@ -13,6 +13,7 @@ def login(username, password):
     # Initialize the Chrome driver
     options = webdriver.ChromeOptions()
     options.add_argument('--ignore-certificate-errors')
+    options.add_argument('--headless')
     driver = webdriver.Chrome()
 
     try:
@@ -31,7 +32,7 @@ def login(username, password):
         password_field.send_keys(Keys.RETURN)
 
         # Sleep for a few seconds to allow the login to complete
-        time.sleep(1)
+        time.sleep(5)
 
     finally:
         # Close the browser
