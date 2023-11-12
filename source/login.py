@@ -2,19 +2,16 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
 import time
 
-
-
 def login(username, password):
-    # Initialize the Chrome driver
+    # Initialize the Chrome driver with options
     options = webdriver.ChromeOptions()
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--headless')
-    driver = webdriver.Chrome()
+    options.add_argument('--disable-gpu')  # Some systems require this to avoid issues
+
+    driver = webdriver.Chrome(options=options)
 
     try:
         # Navigate to the captive portal URL
