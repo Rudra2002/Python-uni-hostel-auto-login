@@ -27,4 +27,8 @@ pip install selenium
 ```
 5. Copy the program from the source folder to where you want it and double-click to run.
 
+
+## Configuration Instructions
+1. Go to the source folder and edit the code to change your-username and your-password to your credentials.
+   
 **Note:** Make sure to periodically check for updates and adjust your setup accordingly.
