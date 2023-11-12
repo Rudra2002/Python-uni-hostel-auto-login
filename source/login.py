@@ -11,6 +11,8 @@ import time
 
 def login(username, password):
     # Initialize the Chrome driver
+    options = webdriver.ChromeOptions()
+    options.add_argument('--ignore-certificate-errors')
     driver = webdriver.Chrome()
 
     try:
