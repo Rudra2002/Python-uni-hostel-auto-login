@@ -53,8 +53,8 @@ def auto_login(username, password, interval_minutes):
 
 if __name__ == "__main__":
     # Set your username and password
-    username = "lab_cet"
-    password = "1234@"
+    username = "your-username"
+    password = "your-password"
 
     # Set the interval for auto-login in minutes (e.g., 30 minutes)
     interval_minutes = 30
