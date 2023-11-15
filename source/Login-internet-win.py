@@ -12,7 +12,7 @@ def login(username, password):
 
     driver = webdriver.Chrome(options=options)
 
-    try:
+        try:
         # Navigate to the captive portal URL
         driver.get("http://192.168.2.1:8090/httpclient.html")
 
@@ -23,13 +23,20 @@ def login(username, password):
         # Input your username and password
         username_field.send_keys(username)
         password_field.send_keys(password)
-
+        # Submit the form
+        password_field.send_keys(Keys.RETURN)
+        time.sleep(0.5)
+        #Sign out from the form
+        webdriver.ActionChains(driver).send_keys(Keys.ENTER).perform()
+        time.sleep(0.5)
+        # Input your username and password
+        password_field.send_keys(password)
         # Submit the form
         password_field.send_keys(Keys.RETURN)
 
+
         # Sleep for a few seconds to allow the login to complete
         time.sleep(5)
-
     finally:
         # Close the browser
         driver.quit()
