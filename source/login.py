@@ -13,7 +13,7 @@ def login(username, password):
 
     driver = webdriver.Chrome(options=options)
 
-        try:
+    try:
         # Navigate to the captive portal URL
         driver.get("http://192.168.2.1:8090/httpclient.html")
 
@@ -38,6 +38,7 @@ def login(username, password):
 
         # Sleep for a few seconds to allow the login to complete
         time.sleep(5)
+
     finally:
         # Close the browser
         driver.quit()
@@ -52,8 +53,8 @@ def auto_login(username, password, interval_minutes):
 
 if __name__ == "__main__":
     # Set your username and password
-    username = "your-username"
-    password = "your-password"
+    username = "lab_cet"
+    password = "1234@"
 
     # Set the interval for auto-login in minutes (e.g., 30 minutes)
     interval_minutes = 30
